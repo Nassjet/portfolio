@@ -74,7 +74,29 @@ function map() {
     mainLayer.addTo(carte)
 
     var markerCFA = L.marker([jussieu.lat, jussieu.long]).addTo(carte);
-    markerCFA.bindPopup("<b>Je serai là !</b><br>I am a popup.").openPopup();
+    markerCFA.bindPopup("<b>Je serai là !</b><br>").openPopup();
 }
 
 map()
+
+// function fluxRSS() {
+//     // Initialisation de FeedEk
+//     $('#rssFeed').FeedEk({
+//         FeedUrl : 'https://jquery-plugins.net/rss',
+//         MaxCount : 5,
+//         ShowDesc : true,
+//         ShowPubDate:true,
+//         DescCharacterLimit:100,
+//         TitleLinkTarget:'_blank',
+//         DateFormat : 'MM/dd/yyyy',
+//         DateFormatLang : 'en',
+//         Offset: 5,
+//         ShowAuthor: true,
+//         AuthorLabel:"Author:",
+//         Success: function (feedItems) { },
+//         Error: function (error) { }
+//         });
+// }
+
+// fluxRSS();
+

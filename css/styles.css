@@ -602,6 +602,15 @@ progress {
   max-width: 100%;
   height: auto;
 }
+.zoom-effect {
+  transform: scale(1); /* Échelle initiale de l'image */
+  transition: transform 0.3s ease; /* Ajoute une transition douce pour une animation fluide */
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1); /* Ajustez la valeur pour le niveau de zoom désiré */
+}
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -11232,10 +11241,6 @@ html {
 
 .neon2 {
   color: black;
-  animation-name: glow;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 ul {
   list-style: none;
