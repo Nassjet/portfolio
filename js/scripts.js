@@ -72,6 +72,9 @@ function map() {
     });
 
     mainLayer.addTo(carte)
+
+    var markerCFA = L.marker([jussieu.lat, jussieu.long]).addTo(carte);
+    markerCFA.bindPopup("<b>Je serai là !</b><br>I am a popup.").openPopup();
 }
 
 map()
