@@ -62,7 +62,7 @@ function map() {
         long:2.356439
     }
 
-    const zoomLevel = 18;
+    const zoomLevel = 16;
 
     const carte = L.map('map').setView([jussieu.lat, jussieu.long],zoomLevel);
 
