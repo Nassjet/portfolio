@@ -22,6 +22,14 @@
 
     <!-- AOS JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
 
 </head>
 
@@ -100,23 +108,30 @@
                     deuxième
                     année de <b class="neon2">BTS SIO</b> (Services Informatiques aux Organisations) dans <b
                         class="neon2">l'option SLAM</b> (Solutions Logicielles et Application Métier) qui est une option
-                    spécialisée pour le développement 💻
-                    <p></p>
-                    <br>
-                    <p>
-                        Actuellement toujours en cours d'étude 🎓, je vous propose sur ce portfolio de retrouver
-                        ci-dessous
-                        les différentes études, et projet professionnel que j'ai pu entreprendre au sein de ma carrière.
-                    </p>
-                    <p>
-                        Vous retrouverez ci-dessous mon CV ainsi que mes différents projets 👩‍💻
-                    </p>
-                    <br>
+                    spécialisée pour le développement 💻. Je peux d'hors-et-déjà affirmer que je serai à la rentrée de
+                    Septembre 2024 à la licence Pro Projet WEB de la Sorbonne au CFA des Sciences à Paris (5ème),
+                    cependant je suis activement en recherche d'alternance.
+                    <div id="map" style="width: 600px; height: 400px; position: relative; outline-style: none;"
+                        class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                        tabindex="0">
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <img src="assets\img\portfolio\CV_NASSIM_MAJ_0903.png" alt="CV" class="img-fluid">
-                </div>
+
+                <br>
+                <p>
+                    Actuellement toujours en cours d'étude 🎓, je vous propose sur ce portfolio de retrouver
+                    ci-dessous
+                    les différentes études, et projet professionnel que j'ai pu entreprendre au sein de ma carrière.
+                </p>
+                <p>
+                    Vous retrouverez ci-dessous mon CV ainsi que mes différents projets 👩‍💻
+                </p>
+                <br>
             </div>
+            <div class="col-lg-4">
+                <img src="assets\img\portfolio\CV_NASSIM_MAJ_0903.png" alt="CV" class="img-fluid">
+            </div>
+        </div>
         </div>
     </section>
 
@@ -374,15 +389,41 @@
                     <p class="lead">J'ai décidé de traiter un sujet d'actualité dont tout développeur doit connaitre
                         pour la suite de son parcours professionnel, il s'agit de l'IA générative DEVIN developpée par
                         Cognition.
+                        <br>
                         Devin AI représente une percée majeure dans le domaine du développement de logiciels, offrant
                         des capacités qui dépassent celles des modèles linguistiques de pointe comme GPT-4 et Gemini.
+                        <br>
+                        Que ce soit pour la génération de code, le débogage autonome ou la contribution active aux
+                        dépôts
+                        open-source, Devin AI promet d’amplifier les capacités productives de ses utilisateurs.
                         <br>
                     </p>
                     <h3 style="text-align: center; color:greenyellow"> <strong>Comment ça fonctionne ?</strong> </h3>
                     <p class="lead">
-                        Devin est 
-
+                        Devin possède un prompt à la manière d'un GPT-4 dans lequel on lui explique avec le plus de
+                        détails, le projet qu'on souhaite qu'il crée. Il possède un éditeur de texte en temps réel, et
+                        est capable de déboguer grâce à son modèle d'apprentissage. Si lors de la création du projet, il
+                        rencontre un bug, il cherchera à le déboguer lui même.
+                        <br>
+                        Il peut accèder à internet, à un terminal pour faire des commandes nécessaires à certains
+                        téléchargements.
+                        <br>
+                        <strong> Il fait tout comme un humain. En plus rapide, plus efficace et surtout plus
+                            intelligent.</strong>
                     </p>
+                    <h3 style="text-align: center; color:greenyellow"> <strong>Exemples Concrets</strong> </h3>
+                    <p class="lead">
+                        La journaliste de Bloomberg explique avoir demandé à Devin de créer un jeu vidéo basique dans le
+                        style de Pong, et un site web. Ces deux tâches ont été complétées en moins de 20 minutes.<br>
+                    </p>
+                    <div class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/G45NKnAWuXc?si=4Oi3M0luv39yu45h"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
                 </div>
             </div>
     </section>

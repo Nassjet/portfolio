@@ -51,4 +51,27 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    var map = L.map('map').setView([51.505, -0.09], 13);
+
 });
+
+function map() {
+    console.log('inside carte')
+    const jussieu = {
+        lat:48.847335,
+        long:2.356439
+    }
+
+    const zoomLevel = 18;
+
+    const carte = L.map('map').setView([jussieu.lat, jussieu.long],zoomLevel);
+
+    const mainLayer= L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    });
+
+    mainLayer.addTo(carte)
+}
+
+map()
