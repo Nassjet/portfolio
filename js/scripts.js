@@ -100,3 +100,13 @@ map()
 
 // fluxRSS();
 
+// Attendez que le chargement de la page soit terminé
+window.addEventListener('load', function() {
+    // Récupérez l'élément contenant Dark Vador
+    var vaderElement = document.getElementById('vader');
+
+    // Masquez l'élément contenant Dark Vador
+    vaderElement.style.display = 'none';
+});
+
+
